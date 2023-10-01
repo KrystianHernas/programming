@@ -32,7 +32,7 @@ int main() {
 
     // Use member functions
     int value = myObject.getPrivateVariable();
-    std::cout << "Value: " << value << std::endl;p
+    std::cout << "Value: " << value << std::endl;
 
     myObject.setPrivateVariable(99);
     value = myObject.getPrivateVariable();
