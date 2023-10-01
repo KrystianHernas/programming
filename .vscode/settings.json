@@ -54,5 +54,7 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "typeinfo": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "/home/ubuntu/programming/cpp/kalkulator",
+    "C_Cpp.default.compilerPath": "/usr/bin/clang++"
 }
