@@ -43,14 +43,12 @@ public:
         throw std::invalid_argument(
             "Input is not a valid floating-point number.");
       }
-
       std::cout << "You entered: " << input << std::endl;
     } catch (std::invalid_argument const &e) {
       std::cerr << e.what() << std::endl;
     } catch (std::out_of_range const &e) {
       std::cerr << "Input out of range for float type.\n";
     }
-
     return numberValue;
   }
 
@@ -64,12 +62,14 @@ public:
     case 'm':
       return x * y;
     case 'd':
-      if (static_cast<int>(y) != 0)
+      if (static_cast<int>(y) != 0) {
         return x / y;
-      else {
+      } else {
         std::cout << "ZERO DIV !!!" << std::endl;
-        return 0.0;
+        return 0;
       }
+    default:
+      return 0;
     }
   }
 
