@@ -7,7 +7,7 @@ private:
 public:
     // Constructor
     MyClass(int initialValue) : myPrivateVariable(initialValue) {
-        // Initialization code here
+        // Initialization code here     
     }
 
     // Destructor

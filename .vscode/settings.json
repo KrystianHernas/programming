@@ -56,5 +56,8 @@
         "typeinfo": "cpp"
     },
     "cmake.sourceDirectory": "/home/ubuntu/programming/cpp/kalkulator",
-    "C_Cpp.default.compilerPath": "/usr/bin/clang++"
+    "C_Cpp.default.compilerPath": "/usr/bin/clang++",
+    "cmake.configureSettings": {
+        "gtest_build_samples": "ON"
+    }
 }
