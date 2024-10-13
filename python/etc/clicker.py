@@ -1,27 +1,22 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
+import pyautogui
 import time
 
-# List of websites you want to open
-website = "https://www.nakarmpsa.olx.pl"
+def perform_mouse_click():
+    # Simulate a mouse click at the current mouse position
+    pyautogui.click()
 
-# Create a new instance of the Chrome driver with incognito mode
-options = Options()
-options.add_argument("--incognito")
+    print("Mouse click performed")
 
-driver = webdriver.Chrome(options=options)
+# Main loop
+while True:
+    try:
+        # Perform mouse click
+        perform_mouse_click()
 
-# Function to perform an action on the website
-def perform_action(driver):
-    
-    pass
+        # Wait for 2 minutes
+        time.sleep(120)  # 120 seconds = 2 minutes
 
-# Open each website, perform action, close tab and repeat
-for x in range(0, 100):
-    driver.get(website)
-    perform_action(driver)
-    time.sleep(2)  # Wait for 2 seconds
-    driver.close()
-
-# Quit the driver
-driver.quit()
+    except KeyboardInterrupt:
+        # Handle Ctrl+C to exit the program
+        print("\nProgram terminated by user")
+        break
